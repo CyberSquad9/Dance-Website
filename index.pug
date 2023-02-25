@@ -1,0 +1,66 @@
+//- index.pug
+//- humne usko views me search karne ko bola hai (app.js - line 13) so woh usme hi search karega. but humne style.ss & index.js file static me create kiya hai so uski paath diya hai.(.. (means views folder se bahar niklega), (../static = means static me search karega))
+//- ( '|' - pipe) use for as it is print in pug.
+doctype html
+html
+  head
+    title Rushi's Dance Academy 
+    style
+      include ../static/style.css   
+  body
+    nav#navbar.top 
+        ul
+            div#logo
+             img(src="./img/2.png")
+            div.name RDA
+            div.li
+            li #[a(href='/') Home ]
+            li #[a(href='/') About ]
+            li #[a(href='/') Services ]
+            li #[a(href='/') Class Info ]
+            li #[a(href='/') Contact Us ]
+    
+    section#introSection 
+          div  Welcome to Rushi's Dance Academy
+          div.small  Eat Sleep Dance Repeat 
+
+    section#missionSection 
+           h3 Our Mission
+           div.cs 
+             div.card
+               h2 Dance Perfection 
+               div.card-box
+                  div.card-img
+                      img(src="./img/1.png")
+
+                  div.card-content
+                    p This is the best dance academy of the univernse    
+             div.card
+               h2 Dance the way you like
+                div.card-box
+                  div.card-img
+                      img(src="./img/2.png")
+
+                  div.card-content
+                    p This is the best dance academy of the univernse    
+             div.card
+               h2 Expert Teaching
+                div.card-box
+                  div.card-img
+                      img(src="./img/1.png")
+
+                  div.card-content
+                    p This is the best dance academy of the univernse    
+
+    section#sponsorSection 
+           h3  Our sponsors 
+           div#sponsors
+               img(src="./img/client1.png", alt="Sponsors image", Class="Spimage")
+               img(src="./img/client2.png", alt="Sponsors image", Class="Spimage")
+               img(src="./img/client3.jpeg", alt="Sponsors image", Class="Spimage")        
+
+    footer#footer 
+          | Copyright @ 2023 RDAcademy.com              
+
+    script
+      include ../static/index.js

@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style  
+    style 
+      include ../static/style.css
+
+block content       
+    
+    section#introSection 
+          div  Welcome to Rushi's Dance Academy
+          div.small  Eat Sleep Dance Repeat 
+
+    section#missionSection 
+           h3 Our Mission
+           div.cs 
+             div.card
+               h2 Dance Perfection 
+               div.card-box
+                  div.card-img
+                      img(src="./img/1.png")
+
+                  div.card-content
+                    p This is the best dance academy of the univernse    
+             div.card
+               h2 Dance the way you like
+                div.card-box
+                  div.card-img
+                      img(src="./img/2.png")
+
+                  div.card-content
+                    p This is the best dance academy of the univernse    
+             div.card
+               h2 Expert Teaching
+                div.card-box
+                  div.card-img
+                      img(src="./img/1.png")
+
+                  div.card-content
+                    p This is the best dance academy of the univernse    
+
+    section#sponsorSection 
+           h3  Our sponsors 
+           div#sponsors
+               img(src="./img/client1.png", alt="Sponsors image", Class="Spimage")
+               img(src="./img/client2.png", alt="Sponsors image", Class="Spimage")
+               img(src="./img/client3.jpeg", alt="Sponsors image", Class="Spimage")        
